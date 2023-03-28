@@ -1,13 +1,20 @@
 let bg = document.getElementById("bg");
-let mountain = document.getElementById("forest");
-let road = document.getElementById("grass");
+let forest = document.getElementById("forest");
+let grass = document.getElementById("grass");
+let animal = document.getElementById("animal");
+let birds = document.getElementById("bird");
 let text = document.getElementById("text");
 
-window.addEventListener('scroll', function () {
-    var value = window.scrollY;
+window.addEventListener("scroll", function () {
+  var value = window.scrollY;
 
-    bg.style.top = value * 0.5 + 'px';
-    mountain.style.top = -value * 0.15 + 'px';
-    road.style.top = value * 0.15 + 'px';
-    text.style.top = value * 1 + 'px';
-})
+  bg.style.top = value * 0.8 + "px";
+  forest.style.top = value * 0.6 + "px";
+  birds.style.left = -value * 0.15 + "px";
+  birds.style.top = value * 0.3 + "px";
+  grass.style.top = value * 0.05 + "px";
+  animal.style.top = value * 0.5 + "px";
+  text.style.top = value * 1 + "px";
+});
+
+AOS.init();
