@@ -9,6 +9,7 @@
 
 body {
   min-height: 1500px;
+  overflow: auto;
 }
 
 section {
@@ -39,8 +40,8 @@ section::after {
   width: 100%;
   height: 100%;
   z-index: 10000;
-  /* background: var(--accent-color-dark);
-  mix-blend-mode: color; */
+  background: var(--accent-color-dark);
+  mix-blend-mode: color;
 }
 
 section img {
@@ -51,6 +52,14 @@ section img {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+}
+
+#bg {
+  filter: saturate(0.5);
+}
+
+#forest {
+  filter: saturate(0.7);
 }
 
 #text {
@@ -67,11 +76,12 @@ section img {
 
 #grass {
   z-index: 3;
+  filter: saturate(0.7);
 }
 
 .navbar {
   position: sticky;
-  z-index: 10000;
+  top: 0;
 }
 
 @media screen and (min-width: 300px) {
@@ -84,4 +94,14 @@ section img {
   #text {
     font-size: 5rem;
   }
+}
+
+#bird2 {
+  width: 300%;
+  height: 300%;
+
+}
+
+aside {
+  margin-left: 50%;
 }
