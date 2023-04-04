@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
+:root {
+  --color-base: #679436;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +13,17 @@
 
 body {
   min-height: 1500px;
-  overflow: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-image: url(/img/seamless_paper.jpg);
+}
+
+main {
+  background-repeat: repeat;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 section {
@@ -56,10 +70,12 @@ section img {
 
 #bg {
   filter: saturate(0.5);
+  filter: sepia(0.5);
 }
 
 #forest {
   filter: saturate(0.7);
+  filter: sepia(0.5);
 }
 
 #text {
@@ -72,36 +88,88 @@ section img {
 
 #animal {
   z-index: 2;
+  filter: sepia(0.5);
 }
 
 #grass {
   z-index: 3;
   filter: saturate(0.7);
+  filter: sepia(0.5);
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
+aside {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 0;
 }
 
-@media screen and (min-width: 300px) {
+#bird2 {
+  width: auto;
+  height: 120%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-left: 70rem;
+}
+
+.sec_op {
+  z-index: 5;
+  margin: 0;
+  margin-top: 12rem;
+}
+
+/* desktop view */
+@media screen and (min-width: 600px) {
   #text {
     font-size: 10rem;
   }
+
+  .navbar {
+    top: 0;
+    z-index: 100;
+    position: sticky;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand>img {
+    margin-right: 1rem;
+  }
 }
 
+/* mobile view */
 @media screen and (max-width: 600px) {
   #text {
     font-size: 5rem;
   }
-}
 
-#bird2 {
-  width: 300%;
-  height: 300%;
+  #navtext {
+    visibility: hidden;
+  }
 
-}
+  #bird2 {
+    visibility: hidden;
+  }
 
-aside {
-  margin-left: 50%;
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .navbar-brand>img {
+    margin-right: 1rem;
+  }
 }
