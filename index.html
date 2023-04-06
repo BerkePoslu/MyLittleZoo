@@ -13,9 +13,6 @@
 </head>
 
 <body>
-  <header>
-
-  </header>
   <main>
     <section class="parallax">
       <img src="/img/bg.jpg" id="bg">
@@ -27,14 +24,27 @@
     </section>
     <div>
       <!-- navbar -->
-      <nav class="navbar bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="/img/HZ-icon.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
             <div id="navtext">HybridZoo</div>
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">History</a>
+              <a class="nav-link" href="#">Photo Library</a>
+            </div>
+          </div>
         </div>
       </nav>
+
+
       <!-- navbar end -->
 
       <!-- section-opening-times -->
@@ -45,7 +55,7 @@
               <h1>Welcome To The Hybrid Zoo</h1>
             </div>
           </div>
-          <div class="row gy-4">
+          <div class="row gy-4 welcome">
             <div class="col-md-4 aos-init aos-animate" data-aos="fade-up">
               <div class="service p-4 rounded-4 shadow-effect">
                 <h3 class="mt-4 mb-2 ">Opening Times</h3>
@@ -91,7 +101,7 @@
                   <tr><strong>Address</strong></tr>
                   <tr>
                     <td>
-                      Hybrid Zoo
+                      HybridZoo
                     </td>
                   </tr>
                   <tr>
@@ -139,15 +149,54 @@
         </div>
 
       </div>
+      <!-- <div class="fixed-bottom justify-content-lg-between p-4 navbar navbar-bottom">
+
+      </div> -->
 
       <!-- section-opening-times-end -->
 
       <br><br><br><br><br><br><br><br>
       <footer>
         <!-- https://www.tilingtextures.com/wp-content/uploads/2018/11/0068-1-512x512.jpg -->
+        <!-- https://www.toptal.com/designers/subtlepatterns/seamless-paper-texture/ -->
+        <!-- https://www.freepik.com/free-photo/crumpled-white-paperboard_6066510.htm#page=4&query=seamless%20paper%20texture&position=8&from_view=keyword&track=ais -->
 
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p>HybridZoo is a creative and imaginative project that depicts a fictional zoo located in Lausanne,
+                  Switzerland. The
+                  project is unique in that it features hybrid animals that are created by blending two different
+                  species. This open
+                  source school project was developed as a fun and educational way to explore genetics and the
+                  possibilities that arise
+                  when combining different animal traits.</p>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Resource Links</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Website developed by
+                  <a href="http://www.berke-poslu.x10.mx">Berke Poslu</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </footer>
-
     </div>
   </main>
   <script src="node_modules/aos/dist/aos.js"></script>
