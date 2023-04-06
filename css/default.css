@@ -118,6 +118,10 @@ section img {
   background-image: linear-gradient(rgba(000, 000, 000, .25), transparent);
 }
 
+.expect_animal {
+  border: 10px solid #CDC99E;
+}
+
 /* tablet view */
 @media screen and (max-width: 800px) {
   #text {
