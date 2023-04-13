@@ -11,15 +11,11 @@
 }
 
 body {
-  min-height: 1500px;
   overflow: scroll;
   overflow-x: hidden;
   background: url(/img/textures/seamless_paper.jpg) repeat;
 }
 
-main {
-  background-repeat: repeat;
-}
 
 
 p {
