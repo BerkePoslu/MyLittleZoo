@@ -119,6 +119,18 @@ p {
   background: url('/img/textures/texture-grunge-second.jpg') repeat;
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 .navbar-bottom {
   background-color: white;
