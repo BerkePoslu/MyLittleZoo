@@ -129,8 +129,10 @@ p {
   background-image: linear-gradient(rgba(000, 000, 000, .25), transparent);
 }
 
-.expect_animal {
+.expect-animal {
   border: 10px solid #CDC99E;
+  width: 500px;
+  height: auto;
 }
 
 /* tablet view */
