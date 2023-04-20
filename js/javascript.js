@@ -21,6 +21,6 @@ AOS.init();
 
 const photoCarousel = document.querySelector("#photoCarousel");
 const carousel = new bootstrap.Carousel(photoCarousel, {
-  interval: 4000,
+  interval: 2500,
   touch: true,
 });
