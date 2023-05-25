@@ -153,7 +153,7 @@ p {
 
 .navbar-top {
   background-color: transparent;
-  background-image: linear-gradient(rgba(000, 000, 000, .25), transparent);
+  background-image: linear-gradient(rgba(000, 000, 000, .5), transparent);
 }
 
 .expect-animal {
