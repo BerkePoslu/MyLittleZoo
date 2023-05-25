@@ -21,7 +21,7 @@
 body {
   overflow: scroll;
   overflow-x: hidden;
-  background: url(/img/textures/seamless_paper.jpg) repeat;
+  background: url('img/textures/seamless_paper.jpg') repeat;
 }
 
 
@@ -111,7 +111,7 @@ p {
 }
 
 .sec-op {
-  background: url('/img/textures/texture-grunge-second.jpg') repeat;
+  background: url('img/textures/texture-grunge-second.jpg') repeat;
   padding-top: 20px;
   margin-top: 15rem;
 }
@@ -268,7 +268,7 @@ p {
 }
 
 .site-footer {
-  background: url('/img/textures/texture-grunge-first.jpg') repeat;
+  background: url('img/textures/texture-grunge-first.jpg') repeat;
   padding: 45px 0 20px;
   line-height: 24px;
   color: var(--color-text-footer);
