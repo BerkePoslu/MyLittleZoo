@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
   text.style.top = value * 1 + "px";
 });
 
-AOS.init();
+
 
 const photoCarousel = document.querySelector("#photoCarousel");
 const carousel = new bootstrap.Carousel(photoCarousel, {
